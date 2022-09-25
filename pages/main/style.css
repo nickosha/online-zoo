@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+input,
+button {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header {
+  height: 80px;
+  background: #000000;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-wrapper {
+  width: 82px;
+  height: 52px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.header-logo {
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.header-logo span {
+  position: relative;
+}
+
+.logo-img {
+  position: absolute;
+  bottom: 4px;
+  left: -4px;
+}
+
+.nav {
+  margin-left: 63px;
+}
+.nav ul {
+  display: flex;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: 58px;
+}
+.nav-item:first-child {
+  margin-left: 0;
+}
+.nav-item:first-child a {
+  color: #F9804B;
+}
+.nav-item a {
+  color: #FFFFFF;
+}
+
+.header-link {
+  margin-left: auto;
+}
+.header-link a {
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
