@@ -35,7 +35,12 @@ button {
     cursor: pointer;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    transition: all 0.3s ease;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -62,6 +67,10 @@ a {
     .container {
         display: flex;
         align-items: center;
+    }
+
+    h1 {
+        display: none;
     }
 }
 
@@ -108,14 +117,38 @@ a {
 
         a {
             color: #F9804B;
+            pointer-events: none;
+            cursor: default;
         }
     }
 
     a {
         color: #FFFFFF;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #FFFFFF;
+            transition: width 0.5s;
+        }
+
+        &:hover:after {
+            content: "";
+            width: 100%;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            height: 2px;
+            background-color: #FFFFFF;
+            transition: width 0.5s;
+        }
     }
 }
-
 
 .header-link {
     margin-left: auto;
@@ -123,4 +156,128 @@ a {
     a {
         color: #FFFFFF;
     }
+}
+
+.hero {
+    position: relative;
+    height: 700px;
+    background: #283035 url("../../assets/images/Giant\ Panda.jpg") no-repeat;
+    background-position: center -80px;
+    padding-top: 86px;
+}
+
+.circle {
+    position: absolute;
+    right: 327px;
+    top: 11px;
+    content: '';
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.hero-text {
+    position: absolute;
+    right: 220px;
+    top: 86px;
+    width: 500px;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    span {
+        color: #FFEE2E;
+    }
+}
+
+.hero-btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 100px;
+    right: 317px;
+}
+
+.btn {
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.backstage {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 106px;
+
+    .content {
+        display: flex;
+    }
+
+
+}
+
+.backstage-image {
+    display: block;
+    width: 609px;
+    max-width: 100%;
+    background: url("../../assets/images/bamboo-cap.jpg");
+}
+
+.backstage-text {
+    margin-left: 87px;
+    width: 465px;
+    max-width: 100%;
+    height: 403px;
+    
+    font-weight: 400;
+    color: #333B41;
+
+    h2 {
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: -0.5px;
+    }
+
+    .descr {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .subtitle {
+        margin-top: 54px;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .text {
+        margin-top: 34px;
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+.bacstage-flowers {
+    position: absolute;
+    top: 12px;
+    right: -89px;
+    width: 293px;
+    height: 605px;
+    background: url("../../assets/images/flower_foto1.jpg");
 }
