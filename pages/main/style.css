@@ -380,4 +380,128 @@ a {
   width: 368px;
   height: 275px;
   background: url("../../assets/images/strelitzia 1.png");
+}
+
+.pick {
+  height: 1004px;
+  padding-top: 69px;
+  padding-bottom: 100px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  opacity: 0.9;
+}
+.pick .container {
+  background: rgba(253, 253, 255, 0.52);
+  border-radius: 20px;
+  padding-top: 41px;
+  padding-left: 99px;
+}
+.pick .container h2 {
+  margin-left: -99px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: #FE9013;
+}
+.pick .container .subtitle {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333B41;
+}
+.pick .container p:nth-child(3) {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333B41;
+}
+.pick .container p:nth-child(4) {
+  position: relative;
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333B41;
+}
+.pick .container p:nth-child(4)::after {
+  position: absolute;
+  bottom: -2px;
+  left: 86px;
+  content: "";
+  width: 178px;
+  height: 1px;
+  background: #FE9013;
+}
+.pick .container h3 {
+  margin-top: 60px;
+  margin-left: -99px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: #333B41;
+  text-align: center;
+}
+
+.card-container {
+  margin-top: 40px;
+  margin-left: 99px;
+  width: 764px;
+  display: grid;
+  grid-template-columns: 168px 130px 168px 130px 168px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333B41;
+}
+
+.card1 .card-image {
+  width: 168px;
+  height: 168px;
+  border: 1px solid #F9804B;
+  border-radius: 5px;
+  background: #fff url("../../assets/icons/pay.svg") no-repeat center;
+}
+.card1 p {
+  margin-top: 30px;
+}
+
+.card2 .card-image {
+  width: 168px;
+  height: 168px;
+  border: 1px solid #F9804B;
+  border-radius: 5px;
+  background: #fff url("../../assets/icons/zoo.svg") no-repeat center;
+}
+.card2 p {
+  margin-top: 30px;
+}
+
+.card3 .card-image {
+  width: 168px;
+  height: 168px;
+  border: 1px solid #F9804B;
+  border-radius: 5px;
+  background: #fff url("../../assets/icons/monkey.svg") no-repeat center;
+}
+.card3 p {
+  margin-top: 30px;
+}
+
+.arrow1,
+.arrow2 {
+  margin: 60px auto;
+  width: 69px;
+  height: 37px;
+  background: url("../../assets/icons/arrow.svg");
+}
+
+.arrow2 {
+  margin-top: 56px;
+}
+
+.pick-btn {
+  margin-left: 332px;
+  margin-top: 60px;
 }/*# sourceMappingURL=style.css.map */
