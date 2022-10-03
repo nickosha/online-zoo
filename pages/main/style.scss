@@ -57,6 +57,10 @@ a {
     max-width: 1160px;
     margin: 0 auto;
     height: 100%;
+
+    @media (max-width: 1000px) {
+        max-width: 940px;
+    }
 }
 
 .header {
@@ -112,6 +116,10 @@ a {
     list-style: none;
     margin-left: 58px;
 
+    @media (max-width: 1000px) {
+        margin-left: 48px;
+    }
+
     &:first-child {
         margin-left: 0;
 
@@ -162,8 +170,19 @@ a {
     position: relative;
     height: 700px;
     background: #283035 url("../../assets/images/Giant\ Panda.jpg") no-repeat;
+    background-size: cover;
     background-position: center -80px;
     padding-top: 86px;
+
+    @media (max-width: 1000px) {
+        // max-width: 1000px;
+        // width: 100%;
+        height: 584px;
+        overflow: hidden;
+        background: url("../../assets/images/Giant\ Panda.jpg") no-repeat;
+        background-size: cover;
+        background-position: center -80px;
+    }
 }
 
 .circle {
@@ -175,12 +194,20 @@ a {
     height: 465px;
     border-radius: 50%;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+
+    @media (max-width: 1000px) {
+        right: 176px;
+        top: -11px;
+        width: 367px;
+        height: 367px;
+    }
 }
 
 .hero-text {
     position: absolute;
     right: 220px;
     top: 86px;
+    
     width: 500px;
     max-width: 100%;
     font-weight: 700;
@@ -193,6 +220,12 @@ a {
     span {
         color: #FFEE2E;
     }
+
+    @media (max-width: 1000px) {
+        right: 35px;
+        top: 43px;
+        font-size: 85px;
+    }
 }
 
 .hero-btn {
@@ -200,6 +233,11 @@ a {
     position: absolute;
     bottom: 100px;
     right: 317px;
+
+    @media (max-width: 1000px) {
+        bottom: 127px;
+        right: 136px;
+    }
 }
 
 .btn {
@@ -231,7 +269,10 @@ a {
         display: flex;
     }
 
-
+    @media (max-width: 1000px) {
+        padding-top: 29px;
+        height: 483px;
+    }
 }
 
 .backstage-image {
@@ -239,6 +280,11 @@ a {
     width: 609px;
     max-width: 100%;
     background: url("../../assets/images/bamboo-cap.jpg");
+
+    @media (max-width: 1000px) {
+        width: 455px;
+        background: url("../../assets/images/bamboo-cap1000px.jpg");
+    }
 }
 
 .backstage-text {
@@ -249,6 +295,15 @@ a {
     
     font-weight: 400;
     color: #333B41;
+
+    @media (max-width: 1000px) {
+        margin-left: 31px;
+        width: 454px;
+
+        h2 {
+            margin-top: -9px;
+        }
+    }
 
     h2 {
         font-size: 48px;
@@ -282,6 +337,10 @@ a {
     width: 293px;
     height: 605px;
     background: url("../../assets/images/flower_foto1.jpg");
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
 }
 
 .animal-cards {
@@ -290,6 +349,13 @@ a {
     .container {
         max-width: 1158px;
         padding-bottom: 100px;
+    }
+
+    @media (max-width: 1000px) {
+        .container {
+            max-width: 940px;
+            padding-bottom: 141px;
+        }
     }
 }
 
@@ -300,6 +366,11 @@ a {
     column-gap: 30px;
     row-gap: 20px;
     margin-top: 106px;
+
+    @media (max-width: 1000px) {
+        grid-template-rows: 354px 354px;
+        row-gap: 92px;
+    }
 }
 
 .card {
@@ -332,31 +403,57 @@ a {
 .animal-image {
     width: 366px;
     height: 366px;
+
+    @media (max-width: 1000px) {
+        width: 294px;
+        height: 294px;
+    }
 }
 
 .card:first-child .animal-image {
     background: url("../../assets/images/panda.jpg");
+    background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
 .card:nth-child(2) .animal-image {
     background: url("../../assets/images/eagle.jpg");
+    background-size: cover;
 }
 
 .card:nth-child(3) .animal-image {
     background: url("../../assets/images/gorillas.jpg");
+    background-size: cover;
+
+    @media (max-width: 1000px) {
+        background: url("../../assets/images/cheetahs.jpg");
+        background-size: cover;
+    }
 }
 
 .card:nth-child(4) .animal-image {
     background: url("../../assets/images/sloth.jpg");
+    background-size: cover;
+
+    @media (max-width: 1000px) {
+        background: url("../../assets/images/gorillas.jpg");
+        background-size: cover;
+    }
 }
 
 .card:nth-child(5) .animal-image {
     background: url("../../assets/images/cheetahs.jpg");
+    background-size: cover;
+
+    @media (max-width: 1000px) {
+        background: url("../../assets/images/alligator.jpg");
+        background-size: cover;
+    }
 }
 
 .card:last-child .animal-image {
     background: url("../../assets/images/penguins.jpg");
+    background-size: cover;
 }
 
 .banana,
@@ -392,6 +489,12 @@ a {
     width: 292px;
     height: 460px;
     background: url("../../assets/images/palm_foto.png");
+
+    @media (max-width: 1000px) {
+        width: 194px;
+        height: 202px;
+        background: url("../../assets/images/palm_foto1000.jpg");
+    }
 }
 
 .strelitzia-image {
@@ -401,6 +504,12 @@ a {
     width: 368px;
     height: 275px;
     background: url("../../assets/images/strelitzia\ 1.png");
+
+    @media (max-width: 1000px) {
+        width: 241px;
+        height: 180px;
+        background: url("../../assets/images/strelitzia1000.jpg");
+    }
 }
 
 .pick {
@@ -410,12 +519,23 @@ a {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     opacity: 0.9;
 
+    @media (max-width: 1000px) {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        height: 876px;
+    }
+
     .container {
         background: rgba(253, 253, 255, 0.52);
         // backdrop-filter: blur(2px);
         border-radius: 20px;
         padding-top: 41px;
         padding-left: 99px;
+
+        @media (max-width: 1000px) {
+            padding-top: 30px;
+            padding-left: 49px;
+        }
 
         h2 {
             margin-left: -99px;
@@ -424,6 +544,10 @@ a {
             line-height: 120%;
             text-align: center;
             color: #FE9013;
+
+            @media (max-width: 1000px) {
+                margin-left: -50px;
+            }
         }
 
         .subtitle {
@@ -431,7 +555,11 @@ a {
             font-weight: 400;
             font-size: 24px;
             line-height: 120%;
-            color: #333B41;  
+            color: #333B41; 
+            
+            @media (max-width: 1000px) {
+                margin-top: 21px;
+            }
         }
 
         p:nth-child(3) {
@@ -440,15 +568,26 @@ a {
             font-size: 16px;
             line-height: 130%;
             color: #333B41;
+
+            @media (max-width: 1000px) {
+                margin-top: 21px;
+                width: 813px;
+            }
         }
 
         p:nth-child(4) {
             position: relative;
+            width: 870px;
             margin-top: 12px;
             font-weight: 400;
             font-size: 16px;
             line-height: 130%;
             color: #333B41;
+
+            @media (max-width: 1000px) {
+                margin-top: 10px;
+                width: 813px;
+            }
 
             &::after {
                 position: absolute;
@@ -458,6 +597,11 @@ a {
                 width: 178px;
                 height: 1px;
                 background: #FE9013;
+
+                @media (max-width: 1000px) {
+                    bottom: 1px;
+                    left: 151px;
+                }
             }
         }
 
@@ -469,21 +613,30 @@ a {
             line-height: 130%;
             color: #333B41;
             text-align: center;
+
+            @media (max-width: 1000px) {
+                margin-top: 40px;
+                margin-left: -50px;
+            }
         }
     }
 }
 
 .card-container {
-    margin-top: 40px;
-    margin-left: 99px;
-    width: 764px;
+    margin: 40px;
+    margin-left: 100px;
+    max-width: 764px;
     display: grid;
-    grid-template-columns: 168px 130px 168px 130px 168px;
+    grid-template-columns: 21.99% 17.015% 21.99% 17.015% 21.99%;
 
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color: #333B41;
+
+    @media (max-width: 1000px) {
+        margin-left: 39px;
+    }
 }
 
 .card1 {
@@ -541,8 +694,21 @@ a {
 }
 
 .pick-btn {
-    margin-left: 332px;
+    display: flex;
+    justify-content: center;
     margin-top: 60px;
+
+    @media (max-width: 1000px) {
+        margin-top: 71px;
+    }
+
+    .btn {
+        margin-left: -95px;
+
+        @media (max-width: 1000px) {
+            margin-left: -47px;
+        }
+    }
 }
 
 .testimonials {
@@ -550,6 +716,11 @@ a {
     padding-top: 140px;
     padding-bottom: 180px;
     overflow: hidden;
+
+    @media (max-width: 1000px) {
+        padding-top: 101px;
+        padding-bottom: 139px;
+    }
 
     .container {
         h2 {
@@ -568,42 +739,77 @@ a {
         width: 247px;
         height: 408px;
         background: url("../../assets/images/leav_foto.jpg");
+
+        @media (max-width: 1000px) {
+            bottom: -129px;
+            right: -51px;
+            background: url("../../assets/images/leav_foto1000.jpg");
+        }
     }
 }
 
 .testimonials-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 30px;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // column-gap: 30px;
+    display: flex;
+    justify-content: space-between;
     margin-top: 47px;
+
+    @media (max-width: 1000px) {
+        margin-top: 29px;
+    }
 }
 
 .testimonials-cards-item1 {
     width: 268px;
-    height: 391px;
+    // height: 391px;
     background: url("../../assets/icons/testimonials.svg");
+
+    @media (max-width: 1000px) {
+        background: url("../../assets/icons/testimonials293.svg");
+        width: 293px;
+    }
 }
 
 .testimonials-cards-item2 {
     width: 268px;
     height: 391px;
     background: url("../../assets/icons/testimonials2.svg");
+
+    @media (max-width: 1000px) {
+        background: url("../../assets/icons/testimonials2-293.svg");
+        width: 293px;
+    }
 }
 
 .testimonials-cards-item3 {
     width: 268px;
     height: 391px;
     background: url("../../assets/icons/testimonials3.svg");
+
+    @media (max-width: 1000px) {
+        background: url("../../assets/icons/testimonials3293.svg");
+        width: 293px;
+    }
 }
 
 .testimonials-cards-item4 {
     width: 268px;
     height: 391px;
     background: url("../../assets/icons/testimonials4.svg");
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
 }
 
 .testimonials-input {
     margin-top: 14px;
+
+    @media (max-width: 1000px) {
+        margin-top: 12px;
+    }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -625,6 +831,12 @@ a {
         -webkit-appearance: none;
     
         overflow: hidden;
+
+        @media (max-width: 1000px) {
+            margin-left: 269px;
+            width: 389px;
+            height: 8px
+        }
     }
   
     input[type="range"]::-webkit-slider-runnable-track {
@@ -647,6 +859,10 @@ a {
 
 .testimonials-btn {
     margin-top: 24px;
+
+    @media (max-width: 1000px) {
+        margin-top: 46px;
+    }
 
     .btn {
         border-radius: 5px;
@@ -803,3 +1019,11 @@ a {
         color: #4B9200;
     }
 }
+
+// .backstage, 
+// .animal-cards,
+// .pick,
+// .testimonials,
+// footer {
+//     display: none;
+// }
